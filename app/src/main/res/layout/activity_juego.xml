@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityJuego">
+
+    <ImageButton
+        android:id="@+id/pos_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pos_7"
+        app:layout_constraintTop_toBottomOf="@+id/pos_5"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toStartOf="@+id/pos_8"
+        app:layout_constraintStart_toEndOf="@+id/pos_6"
+        app:layout_constraintTop_toBottomOf="@+id/pos_4"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toStartOf="@+id/pos_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pos_3"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pos_1"
+        app:layout_constraintTop_toBottomOf="@+id/score_2"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toStartOf="@+id/pos_2"
+        app:layout_constraintStart_toEndOf="@+id/pos_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toStartOf="@+id/pos_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_1"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintBottom_toTopOf="@+id/pos_7"
+        app:layout_constraintEnd_toStartOf="@+id/pos_5"
+        app:layout_constraintStart_toEndOf="@+id/pos_3"
+        app:layout_constraintTop_toBottomOf="@+id/pos_1"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <ImageButton
+        android:id="@+id/pos_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pos_4"
+        app:layout_constraintTop_toBottomOf="@+id/pos_2"
+        app:srcCompat="@drawable/fondotablero" />
+
+    <TextView
+        android:id="@+id/score_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="77dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="51dp"
+        android:text="Jugador 2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="270dp"
+        android:text="Jugador 1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="300dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pos_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:onClick="Presionar"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:tag="R.drawable.fondotablero"
+        app:layout_constraintEnd_toStartOf="@+id/pos_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pos_0"
+        app:srcCompat="@drawable/fondotablero" />
+</android.support.constraint.ConstraintLayout>
